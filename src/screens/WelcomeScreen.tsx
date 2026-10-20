@@ -1,4 +1,4 @@
-import { useRouter, type Href } from "expo-router";
+import { useRouter } from "expo-router";
 import { useEffect } from "react";
 import { Image, StatusBar, Text, View } from "react-native";
 import Animated, { useSharedValue, withSpring } from "react-native-reanimated";
@@ -22,44 +22,42 @@ export default function WelcomeScreen() {
         (ringTwoPadding.value = withSpring(ringTwoPadding.value + hp("5%"))),
       100,
     );
-    setTimeout(() => router.replace("/home" as Href), 3000);
+    setTimeout(() => router.replace("/home"), 3500);
   }, [ringOnePadding, ringTwoPadding, router]);
 
   return (
-    <View className="flex-1 items-center justify-center space-y-10 bg-gradient-to-br from-indigo-500/10 via-purple-500/5 to-pink-500/10 bg-white">
-      <StatusBar barStyle="dark-content" />
+    <View className="flex-1 items-center justify-center space-y-10 bg-amber-500">
+      <StatusBar barStyle="light-content" />
 
       <Animated.View
-        className="rounded-full bg-indigo-200/20"
+        className="rounded-full bg-white/20"
         style={{ padding: ringOnePadding }}
       >
         <Animated.View
-          className="rounded-full bg-indigo-200/20"
+          className="rounded-full bg-white/20"
           style={{ padding: ringTwoPadding }}
         >
           <Image
             source={require("../../assets/images/food-welcome-ai-1.jpeg")}
-            style={{ width: hp("20%"), height: hp("20%") }}
+            style={{ width: hp("18%"), height: hp("18%") }}
             className="rounded-full border-8 border-white/20"
           />
         </Animated.View>
       </Animated.View>
 
       <View
-        className="flex items-center space-y-2"
-        style={{ padding: hp("4%") }}
+        className="flex items-center justify-center space-y-4"
+        style={{ padding: hp("4%"), marginLeft: hp("2%") }}
       >
-        <Text
-          className="font-bold tracking-widest text-zinc-900"
-          style={{ fontSize: hp("7%") }}
-        >
+        <Text className="font-bold text-white" style={{ fontSize: hp("7%") }}>
           African Recipes
         </Text>
         <Text
-          className="font-bold tracking-widest text-zinc-700"
-          style={{ fontSize: hp("2%") }}
+          className="font-bold tracking-widest text-white"
+          style={{ fontSize: hp("3%") }}
         >
-          Discover the delicious flavors of traditional African cuisine
+          Discover recipes that carry the warmth, color, and soul of Africa to
+          your kitchen.
         </Text>
       </View>
     </View>
