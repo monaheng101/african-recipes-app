@@ -1,56 +1,145 @@
-# Welcome to your Expo app 👋
+# African Recipes App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+> African cooking made simple. Spice up your routine with hundreds of rich, heritage-rich dishes from across the continent.
 
-## Get started
+[![React Native](https://shields.io)](https://reactnative.dev)
+[![Expo](https://shields.io)](https://expo.dev/)
+[![TypeScript](https://shields.io)](https://typescriptlang.org)
 
-1. Install dependencies
+---
 
+## 📱 Features
+
+* **Feature 1:** Spring Animation (e.g., React Native Reanimated animates rings on the welcome page withspring to welcome the user)
+* **Feature 1:** Short description (e.g., File-based routing with Expo Router)
+* **Feature 2:** Short description (e.g., Cross-platform iOS & Android support)
+* **Feature 3:** Short description (e.g., Dark mode & theme support)
+* **Feature 4:** Short description (e.g., State management with Zustand/Redux)
+
+---
+
+## 📸 Screenshots / Preview
+
+| Home Screen | Profile Screen | Settings Screen |
+| :---: | :---: | :---: |
+| ![Home](path/to/home.png) | ![Profile](path/to/profile.png) | ![Settings](path/to/settings.png) |
+
+---
+
+## 🛠️ Tech Stack
+
+* **Framework:** [React Native](https://reactnative.dev) via [Expo](https://expo.dev/)
+* **Routing:** [Expo Router](https://expo.dev) (File-based navigation)
+* **Language:** [TypeScript](https://typescriptlang.org)
+* **Styling:** (e.g., NativeWind / StyleSheet / Tailwind)
+* **State / API:** (e.g., TanStack Query, Zustand, Axios)
+
+---
+
+## 📋 Prerequisites
+
+Make sure you have the following installed on your machine:
+* [Node.js](https://nodejs.org) (LTS version recommended)
+* [npm](https://npmjs.com) or [yarn](https://yarnpkg.com) / [pnpm](https://pnpm.io) / [bun](https://bun.sh)
+* **Expo Go** app installed on your physical iOS or Android device, or an iOS Simulator / Android Emulator configured.
+
+---
+
+## 🚀 Getting Started
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com
+   cd your-repo-name
+   ```
+
+2. **Install dependencies:**
    ```bash
    npm install
+   # or
+   yarn install
+   # or
+   pnpm install
    ```
 
-2. Start the app
+3. **Start the development server:**
+   ```npx expo start```
+   
+4. **Run the app:**
+   * Scan the QR code with **Expo Go** (Android) or the **Camera app** (iOS).
+   * Press `i` in the terminal to open the **iOS Simulator**.
+   * Press `a` in the terminal to open the **Android Emulator**.
+   * Press `w` to open in a **Web browser**.
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## 📁 Project Structure
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```text
+├── app/                  # File-based routing & screens (Expo Router)
+│   ├── _layout.tsx       # Root layout & navigation providers
+│   ├── index.tsx         # Home/Landing screen
+│   └── tabs/             # Bottom tab navigator screens
+├── assets/               # Images, fonts, icons, and splash screens
+├── components/           # Reusable UI components
+├── constants/            # Theme, colors, and global constants
+├── hooks/                # Custom React hooks
+├── types/                # TypeScript interfaces and types
+├── app.json              # Expo app configuration & native metadata
+├── package.json          # Project scripts and dependencies
+└── tsconfig.json         # TypeScript compiler configuration
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-### Other setup steps
+## 📦 Building for Production (EAS Build)
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+This project uses [EAS Build](https://expo.dev) for compiling native iOS and Android binaries.
 
-## Learn more
+1. **Install EAS CLI:**
+   ```bash
+   npm install -g eas-cli
+   ```
 
-To learn more about developing your project with Expo, look at the following resources:
+2. **Log in to your Expo account:**
+   ```bash
+   eas login
+   ```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+3. **Configure EAS Build:**
+   ```bash
+   eas build:configure
+   ```
 
-## Join the community
+4. **Build the app:**
+   * **Android (APK / AAB):**
+     ```bash
+     eas build --platform android --profile production
+     ```
+   * **iOS (IPA):**
+     ```bash
+     eas build --platform ios --profile production
+     ```
 
-Join our community of developers creating universal apps.
+---
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 🤝 Contributing
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+```
+
+<FollowUp>
+If you want to customize this further, tell me:
+* What **backend or database** your app connects to (e.g., Supabase, Firebase, Node.js)?
+* What **state management or UI libraries** you are using?
+</FollowUp>
