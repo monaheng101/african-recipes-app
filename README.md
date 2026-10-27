@@ -10,50 +10,45 @@
 
 ## 📱 Features
 
-* **Feature 1:** Spring Animation (e.g., React Native Reanimated animates rings on the welcome page withspring to welcome the user)
-* **Feature 1:** Short description (e.g., File-based routing with Expo Router)
-* **Feature 2:** Short description (e.g., Cross-platform iOS & Android support)
-* **Feature 3:** Short description (e.g., Dark mode & theme support)
-* **Feature 4:** Short description (e.g., State management with Zustand/Redux)
-
----
-
-## 📸 Screenshots / Preview
-
-| Home Screen | Profile Screen | Settings Screen |
-| :---: | :---: | :---: |
-| ![Home](path/to/home.png) | ![Profile](path/to/profile.png) | ![Settings](path/to/settings.png) |
+- **Feature 1:** Spring Animation (e.g., React Native Reanimated animates rings on the welcome page withspring to welcome the user)
+- **Feature 1:** Short description (e.g., File-based routing with Expo Router)
+- **Feature 2:** Short description (e.g., Cross-platform iOS & Android support)
+- **Feature 3:** Short description (e.g., Dark mode & theme support)
+- **Feature 4:** Short description (e.g., State management with Zustand/Redux)
 
 ---
 
 ## 🛠️ Tech Stack
 
-* **Framework:** [React Native](https://reactnative.dev) via [Expo](https://expo.dev/)
-* **Routing:** [Expo Router](https://expo.dev) (File-based navigation)
-* **Language:** [TypeScript](https://typescriptlang.org)
-* **Styling:** (e.g., NativeWind / StyleSheet / Tailwind)
-* **State / API:** (e.g., TanStack Query, Zustand, Axios)
+- **Framework:** [React Native](https://reactnative.dev) via [Expo](https://expo.dev/)
+- **Routing:** [Expo Router](https://expo.dev) (File-based navigation)
+- **Language:** [TypeScript](https://typescriptlang.org)
+- **Styling:** (e.g., NativeWind / StyleSheet / Tailwind)
+- **State / API:** (e.g., TanStack Query, Zustand, Axios)
 
 ---
 
 ## 📋 Prerequisites
 
 Make sure you have the following installed on your machine:
-* [Node.js](https://nodejs.org) (LTS version recommended)
-* [npm](https://npmjs.com) or [yarn](https://yarnpkg.com) / [pnpm](https://pnpm.io) / [bun](https://bun.sh)
-* **Expo Go** app installed on your physical iOS or Android device, or an iOS Simulator / Android Emulator configured.
+
+- [Node.js](https://nodejs.org) (LTS version recommended)
+- [npm](https://npmjs.com) or [yarn](https://yarnpkg.com) / [pnpm](https://pnpm.io) / [bun](https://bun.sh)
+- **Expo Go** app installed on your physical iOS or Android device, or an iOS Simulator / Android Emulator configured.
 
 ---
 
 ## 🚀 Getting Started
 
 1. **Clone the repository:**
+
    ```bash
    git clone https://github.com
    cd your-repo-name
    ```
 
 2. **Install dependencies:**
+
    ```bash
    npm install
    # or
@@ -63,13 +58,12 @@ Make sure you have the following installed on your machine:
    ```
 
 3. **Start the development server:**
-   ```npx expo start```
-   
+   `npx expo start`
 4. **Run the app:**
-   * Scan the QR code with **Expo Go** (Android) or the **Camera app** (iOS).
-   * Press `i` in the terminal to open the **iOS Simulator**.
-   * Press `a` in the terminal to open the **Android Emulator**.
-   * Press `w` to open in a **Web browser**.
+   - Scan the QR code with **Expo Go** (Android) or the **Camera app** (iOS).
+   - Press `i` in the terminal to open the **iOS Simulator**.
+   - Press `a` in the terminal to open the **Android Emulator**.
+   - Press `w` to open in a **Web browser**.
 
 ---
 
@@ -92,31 +86,42 @@ Make sure you have the following installed on your machine:
 
 ---
 
+---
+
+## Libraries
+
+**react-native-heroicons** [heroicons](https://www.npmjs.com/package/react-native-heroicons)
+
+---
+
 ## 📦 Building for Production (EAS Build)
 
 This project uses [EAS Build](https://expo.dev) for compiling native iOS and Android binaries.
 
 1. **Install EAS CLI:**
+
    ```bash
    npm install -g eas-cli
    ```
 
 2. **Log in to your Expo account:**
+
    ```bash
    eas login
    ```
 
 3. **Configure EAS Build:**
+
    ```bash
    eas build:configure
    ```
 
 4. **Build the app:**
-   * **Android (APK / AAB):**
+   - **Android (APK / AAB):**
      ```bash
      eas build --platform android --profile production
      ```
-   * **iOS (IPA):**
+   - **iOS (IPA):**
      ```bash
      eas build --platform ios --profile production
      ```
@@ -136,6 +141,7 @@ This project uses [EAS Build](https://expo.dev) for compiling native iOS and And
 ## 📄 License
 
 Distributed under the MIT License. See `LICENSE` for more information.
+
 ```
 
 <FollowUp>
@@ -143,3 +149,4 @@ If you want to customize this further, tell me:
 * What **backend or database** your app connects to (e.g., Supabase, Firebase, Node.js)?
 * What **state management or UI libraries** you are using?
 </FollowUp>
+```
