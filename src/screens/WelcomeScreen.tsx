@@ -22,7 +22,7 @@ export default function WelcomeScreen() {
         (ringTwoPadding.value = withSpring(ringTwoPadding.value + hp("5%"))),
       100,
     );
-    setTimeout(() => router.replace("/home"), 3500);
+    setTimeout(() => router.replace("/home"), 4000);
   }, [ringOnePadding, ringTwoPadding, router]);
 
   return (
@@ -47,17 +47,16 @@ export default function WelcomeScreen() {
 
       <View
         className="flex items-center justify-center space-y-4"
-        style={{ padding: hp("4%"), marginLeft: hp("2%") }}
+        style={{ padding: hp("3%") }}
       >
-        <Text className="font-bold text-white" style={{ fontSize: hp("7%") }}>
+        <Text className="font-bold text-white" style={{ fontSize: hp("6%") }}>
           African Recipes
         </Text>
         <Text
           className="font-bold tracking-widest text-white"
           style={{ fontSize: hp("3%") }}
         >
-          Discover recipes that carry the warmth, color, and soul of Africa to
-          your kitchen.
+          Your passport to Africa's richest flavors
         </Text>
       </View>
     </View>
