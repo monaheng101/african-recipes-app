@@ -1,8 +1,12 @@
+import { useState } from "react";
 import { ScrollView, StatusBar, Text, TextInput, View } from "react-native";
 import { MagnifyingGlassIcon } from "react-native-heroicons/outline";
 import { heightPercentageToDP as hp } from "react-native-responsive-screen";
+import Categories from "../components/categories";
 
 export default function HomeScreen() {
+  const [activeCategory, setActiveCategory] = useState("Ethiopia");
+
   return (
     <View className="flex-1 bg-white">
       <StatusBar barStyle="dark-content" />
@@ -45,6 +49,14 @@ export default function HomeScreen() {
               strokeWidth={2.2}
             />
           </View>
+        </View>
+
+        {/* Categories */}
+        <View>
+          <Categories
+            activeCategory={activeCategory}
+            setActiveCategory={setActiveCategory}
+          />
         </View>
       </ScrollView>
     </View>
